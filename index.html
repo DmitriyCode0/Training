@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ultimate Training</title>
+    <link rel="stylesheet" href="css/Style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="img/logo.png">
+  </head>
+  <body>
+
+    <div class="sidebar">
+      <div class="logo_content">
+        <div class="logo">
+          <i class="bx bx-trophy"></i>
+          <div class="logo_name">UltimateTraining</div>
+        </div>
+        <i class="bx bx-menu-alt-left" id="btn"></i>
+      </div>
+          <ul class="nav_list">
+            <li>
+              <i class="bx bx-search-alt"></i>
+              <input type="text" placeholder="Search..." />
+
+              <span class="tooltip">Search</span>
+            </li>
+            <li>
+              <a href="index.html">
+                <i class="bx bx-grid-alt"></i>
+                <span class="links_name">Main Page</span>
+              </a>
+              <span class="tooltip">Main Page</span>
+            </li>
+            <li>
+              <a href="Plans.html">
+                <i class="bx bx-dumbbell"></i>
+                <span class="links_name">Plans</span>
+              </a>
+              <span class="tooltip">Plans</span>
+            </li>
+            <li>
+              <a href="Log.html">
+                <i class="bx bxs-book-alt"></i>
+                <span class="links_name">Log</span>
+              </a>
+              <span class="tooltip">Log</span>
+            </li>
+            <li>
+              <a href="Measurements.html">
+                <i class="bx bx-stats"></i>
+                <span class="links_name">Measurements</span>
+              </a>
+              <span class="tooltip">Measurements</span>
+            </li>
+            <li>
+              <a href="User.html">
+                <i class="bx bxs-user"></i>
+                <span class="links_name">User</span>
+              </a>
+              <span class="tooltip">User</span>
+            </li>
+          </ul>
+        
+        <div class="profile_content">
+          <div class="profile">
+            <div class="profile_details">
+              <img src="img/Profile.jpeg" alt="" />
+              <div class="name_job">
+                <div class="name">Dmitriy</div>
+                <div class="job">Coach</div>
+              </div>
+            </div>
+            <i class="bx bx-log-out" id="log-out"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="home_content">
+  <div class="text">
+    Hi and Welcome back to your lifting journey
+  </div>
+</div>
+
+<script>
+let btn = document.querySelector("#btn");
+let sidebar = document.querySelector(".sidebar");
+let searchBtn = document.querySelector(".bx-search-alt");
+
+btn.onclick = function(){
+  sidebar.classList.toggle("active")
+}
+
+searchBtn.onclick = function(){
+  sidebar.classList.toggle("active")
+}
+
+</script>
+</body>
+</html>
+
+<!-- <h1 class="head">Hi and Welcome back to your lifting journey</h1>
+<h2>
+  Please, check out one from the given programs or
+  <a href="Create program.html" target="_blank" rel="noopener noreferrer"
+    >create</a
+  >
+  your own programm
+</h2>
+<div class="card"><a href="index.html">Beginner</a></div>
+<div><a href="Intermediate.html" target="_blank">Intermediate</a></div>
+<div><a href="Create program.html" target="_blank">Create</a></div>
+<div class="card"><a href="ULA.html" target="_blank">Arms focused</a></div>
+<p>Create calendar with log</p> -->
